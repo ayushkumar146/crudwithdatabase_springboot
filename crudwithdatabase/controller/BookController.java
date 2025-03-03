@@ -32,7 +32,7 @@ class BookController {
      * @return Created book
      */
     @PostMapping
-    public Book createBook(@RequestBody Book book) {
+    public Book createBook(@RequestBody Book book) { // book object ke bnte hi, jo data postman me dia tha, wo data constructor jo Book.java me h ke through is book object me aajaega
         return bookService.addBook(book);
     }
 
