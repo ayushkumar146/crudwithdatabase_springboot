@@ -22,7 +22,7 @@ class BookController {
     /**
      * Constructor-based Dependency Injection.
      */
-    public BookController(BookService bookService) {
+    public BookController(BookService bookService) { // isme request body se kuch assign nhi krna apne ko bus BookService ke methods ko use krne ka access chahiye.
         this.bookService = bookService;
     }
 
